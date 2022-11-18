@@ -35,35 +35,23 @@ const WelcomeHome = () => {
       {assignedTasks?.length === 0 && (
         <p>You have nothing for today, take a nap!</p>
       )}
-<html>
-<SCRIPT LANGUAGE="JAVASCRIPT">
-<!-- 
+<script type='text/javascript'>
+function random_content(){
+	var tip=new Array()
 
-var r_text = new Array (); 
-r_text[0] = "I was just thinking about you!"; 
-r_text[1] = "You are a great example for others."; 
-r_text[2] = "You have great ideas."; 
-r_text[3] = "When I grow up I want to be you!"; 
-r_text[4] = "I appreciate all of your opinions."; 
+	tip[0]="Always use Amorer\'s Hammers to repair items\.\.\. it is much cheaper and helps you level up faster\."
+	tip[1]="Go as long as you can without meditating\.\.\. you\'ll get attributes faster but won\'t get a high level\."
+	tip[2]="Try not to use sources of fast travel \(e\.g\. Silt Strider\) and you will get more experience from kills along the way and just running\."
+	tip[3]="If you want to kill someone... take something and wait until they hit you, it will be self-defense and you are only fined for theft\."
+	tip[4]="Never store your items in a container\.\.\. some have owners and all items put in them will be considered stolen when removed\."
+	tip[5]="The farther you fall\.\.\. the faster you level up in acrobatics\.\.\. unless\, of course\, you die\. \:\-\)"
 
-var i = Math.floor(r_text.length * Math.random()); 
+	var rt=Math.floor(Math.random()*tip.length)
 
-document.write("<br /><br /><br /><br /><br /><br /><br /><center><FONT SIZE=72><FONT COLOR='#FFFFFF'>" + 
-r_text[i]  + "</FONT></center><br />"); 
-
-var bgcolorlist=new Array("#228B22", "#FFD700", "#ADFF2F", "#FF69B4", "#CD5C5C", "#4B0082", "#7CFC00", "#ADD8E6", "#E84643", "#ED0A07", "#EA2907", "#E5294B", "#E00D26", "#FF3030", "#FC7500", "#F95700", "#F43900", "#F95620") 
-
-document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]; 
-
-</script><br> <br> 
-    <br> 
-    <br> 
-    <style type="text/css"> 
-<!-- 
-body,td,th { 
-     color: #000; 
-     font-family: Helvetica, sans-serif; 
-</html> 
+	document.write(tip[rt])
+}
+random_content()
+</script>
     </div>
   );
 };
