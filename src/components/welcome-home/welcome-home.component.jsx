@@ -35,6 +35,7 @@ const WelcomeHome = () => {
       {assignedTasks?.length === 0 && (
         <p>You have nothing for today, take a nap!</p>
       )}
+<html>
 <SCRIPT LANGUAGE="JAVASCRIPT">
 <!-- 
 
