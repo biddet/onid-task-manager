@@ -5,12 +5,12 @@ import "firebase/storage";
 import { v4 as uuidv4 } from "uuid";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCHAllXm9uaufWa4JBdr3dwV9qfmE2rSyI",
-  authDomain: "onid-tm.firebaseapp.com",
-  projectId: "onid-tm",
-  storageBucket: "onid-tm.appspot.com",
-  messagingSenderId: "141658461672",
-  appId: "1:141658461672:web:47706ce9c15eb178dd805d",
+  apiKey: "AIzaSyCgRSmjw1iWIcAVMXg5cd6Yic7cW69G15c",
+  authDomain: "onid-1.firebaseapp.com",
+  projectId: "onid-1",
+  storageBucket: "onid-1.appspot.com",
+  messagingSenderId: "23407192164",
+  appId: "1:23407192164:web:7bb33752c48b7cf1769771",
 };
 
 if (!firebase.apps.length) {
