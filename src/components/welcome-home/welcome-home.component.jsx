@@ -13,6 +13,16 @@ const WelcomeHome = () => {
 
   const name = userName;
   let time = new Date();
+	
+var messages = ["Happy birthday to GFG",
+    "Happy birthday to GeeksforGeeks",
+    "Happy birthday to Geeks"];
+  
+var i = messages.length;
+var s = Math.floor(Math.random() * i);
+  
+document.getElementById("msg")
+    .innerHTML = '" ' + messages[s] + ' "';
 
   useEffect(() => {
     let h = time.getHours();
@@ -35,23 +45,7 @@ const WelcomeHome = () => {
       {assignedTasks?.length === 0 && (
         <p>You have nothing for today, take a nap!</p>
       )}
-<script type='text/javascript'>
-function random_content(){
-	var tip=new Array()
-
-	tip[0]="Always use Amorer\'s Hammers to repair items\.\.\. it is much cheaper and helps you level up faster\."
-	tip[1]="Go as long as you can without meditating\.\.\. you\'ll get attributes faster but won\'t get a high level\."
-	tip[2]="Try not to use sources of fast travel \(e\.g\. Silt Strider\) and you will get more experience from kills along the way and just running\."
-	tip[3]="If you want to kill someone... take something and wait until they hit you, it will be self-defense and you are only fined for theft\."
-	tip[4]="Never store your items in a container\.\.\. some have owners and all items put in them will be considered stolen when removed\."
-	tip[5]="The farther you fall\.\.\. the faster you level up in acrobatics\.\.\. unless\, of course\, you die\. \:\-\)"
-
-	var rt=Math.floor(Math.random()*tip.length)
-
-	document.write(tip[rt])
-}
-random_content()
-</script>
+<div id="msg"></div>
     </div>
   );
 };
